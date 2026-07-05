@@ -20,6 +20,8 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 ### Algoritmo Z (2)
 [Codeforces - 182D. Common Divisors](https://codeforces.com/problemset/problem/182/D) : **Rai Manrique**
 
+[Codeforces - 1200E. Compress Words](https://codeforces.com/problemset/problem/1200/E) : **Rai Manrique**
+
 ### Segment Tree (2)
 
 ### Árbol Fenwick (2)
