@@ -1,20 +1,35 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL)
-using ll = long long;
+void resolver() {
+    int n;
+    cin >> n;
 
-const bool HAS_CASE = true; //true if t (test cases) is part of input, false otherwise
+    map<int, int> frecuencias;
+    int f_max = 0;
 
-void solve(){
+    for (int i = 0; i < n; ++i) {
+        int numero;
+        cin >> numero;
+        frecuencias[numero]++;
 
+        f_max = max(f_max, frecuencias[numero]);
+    }
+
+    if (f_max > n - f_max) {
+        cout << 2 * f_max - n << "\n";
+    } 
+    else {
+        cout << n % 2 << "\n";
+    }
 }
 
-int main(){
-    fastio;
-    int t = 1;
-    if (HAS_CASE) cin>>t;
-    while (t--){
-        solve();
+int main() {
+    int casos;
+    if (cin >> casos) {
+        while (casos--) {
+            resolver();
+        }
     }
+    return 0;
 }
