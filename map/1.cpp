@@ -1,20 +1,43 @@
 #include <bits/stdc++.h>
+
+
 using namespace std;
 
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL)
-using ll = long long;
+int main() {
 
-const bool HAS_CASE = true; //true if t (test cases) is part of input, false otherwise
+    int cantidad_programas;
+    cin >> cantidad_programas;
 
-void solve(){
+    map<int, int> Ltiempo;
 
-}
+    for (int i = 0; i < cantidad_programas; ++i) {
+        int inicio, fin;
+        cin >> inicio >> fin;
 
-int main(){
-    fastio;
-    int t = 1;
-    if (HAS_CASE) cin>>t;
-    while (t--){
-        solve();
+        Ltiempo[inicio]++;
+
+        Ltiempo[fin + 1]--;
     }
+
+    int televisores_actuales = 0;
+    bool es_posible = true;
+    
+    for (auto const& [tiempo, cambio] : Ltiempo) {
+ 
+        televisores_actuales += cambio;
+
+         if (televisores_actuales > 2) {
+            es_posible = false;
+            break;
+        }
+    }
+
+
+    if (es_posible == true) {
+        cout << "YES";
+    } else {
+        cout << "NO";
+    }
+
+    return 0;
 }
