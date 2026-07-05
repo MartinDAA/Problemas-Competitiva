@@ -11,11 +11,9 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 
 ### Map (2)
 
-**Rai Manrique**
-[Codeforces - C. Two TVs](https://codeforces.com/problemset/problem/845/C)
+[Codeforces - 845C. Two TVs](https://codeforces.com/problemset/problem/845/C) : **Rai Manrique**
 
-**Rai Manrique**
-[Codeforces - D. Epic Transformation](https://codeforces.com/problemset/problem/1506/D)
+[Codeforces - 1506D. Epic Transformation](https://codeforces.com/problemset/problem/1506/D) : **Rai Manrique**
 
 ### Algoritmo KMP (2)
 
@@ -28,6 +26,10 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 ### Árboles Ternarios (2)
 
 ### Trie (2)
+ 
+[Leetcode - 336. Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/description/) : **Martin del Águila**
+
+[Leetcode - 720. Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/description/) : **Martin del Águila**
 
 ### Programación dinámica (2)
     
