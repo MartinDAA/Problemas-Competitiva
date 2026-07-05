@@ -35,4 +35,9 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 [Leetcode - 720. Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/description/) : **Martin del Águila**
 
 ### Programación dinámica (2)
+
+[Leetcode - 300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) : **Jose Diaz**
+
+[Leetcode - 322. Coin Change](https://leetcode.com/problems/coin-change/description/) : **Jose Diaz**
+
     
