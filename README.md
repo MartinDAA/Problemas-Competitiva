@@ -25,7 +25,12 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 **336. Palindrome Pairs**
 *  ¿Quién resolvio? Martin del Águila
 * Plataforma: [Leetcode](https://leetcode.com) 
-* [Link del problema](https://leetcode.com/problems/palindrome-pairs/description/) 
+* [Link del problema](https://leetcode.com/problems/palindrome-pairs/description/)
+
+**720. Longest Word in Dictionary**
+*  ¿Quién resolvio? Martin del Águila
+* Plataforma: [Leetcode](https://leetcode.com) 
+* [Link del problema](https://leetcode.com/problems/longest-word-in-dictionary/description/)  
 
 ### Programación dinámica (2)
     
