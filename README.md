@@ -11,6 +11,9 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 
 ### Map (2)
 
+**Rai Manrique**
+[Codeforces - C. Two TVs](https://codeforces.com/problemset/problem/845/C)
+
 ### Algoritmo KMP (2)
 
 ### Algoritmo Z (2)
