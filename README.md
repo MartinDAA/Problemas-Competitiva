@@ -25,6 +25,7 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 ### Segment Tree (2)
 [Codeforces - 356A. Knight Tournament](https://codeforces.com/problemset/problem/356/A) : **Rai Manrique**
 ### Árbol Fenwick (2)
+[LeetCode - 315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/) : **Jose Diaz**
 
 ### Árboles Ternarios (2)
 
