@@ -18,6 +18,7 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 ### Algoritmo KMP (2)
 
 ### Algoritmo Z (2)
+[Codeforces - 182D. Common Divisors](https://codeforces.com/problemset/problem/182/D) : **Rai Manrique**
 
 ### Segment Tree (2)
 
