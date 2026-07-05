@@ -23,7 +23,7 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 [Codeforces - 1200E. Compress Words](https://codeforces.com/problemset/problem/1200/E) : **Rai Manrique**
 
 ### Segment Tree (2)
-
+[Codeforces - 356A. Knight Tournament](https://codeforces.com/problemset/problem/356/A) : **Rai Manrique**
 ### Árbol Fenwick (2)
 
 ### Árboles Ternarios (2)
