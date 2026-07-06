@@ -16,7 +16,7 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 [Codeforces - 1506D. Epic Transformation](https://codeforces.com/problemset/problem/1506/D) : **Rai Manrique**
 
 ### Algoritmo KMP (2)
-[Codeforces - B1137. Camp Schedule](https://codeforces.com/contest/1137/problem/B) : **Martin del Águila**
+[Codeforces - 1137B. Camp Schedule](https://codeforces.com/contest/1137/problem/B) : **Martin del Águila**
 
 [Codeforces - 432D. Prefixes and Suffixes](https://codeforces.com/problemset/problem/432/D) : **Martin del Águila**
 
