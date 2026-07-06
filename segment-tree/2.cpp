@@ -1,20 +1,108 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
 using namespace std;
 
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL)
-using ll = long long;
+class Solution {
+public:
+    struct Node {
+        int val, l, r;
+        Node() : val(1), l(1), r(1) {}
+    };
 
-const bool HAS_CASE = true; //true if t (test cases) is part of input, false otherwise
+    vector<Node> tree;
+    string s;
 
-void solve(){
+    void calculate(int ind, int tl, int tr, int mid) {
+        Node& curr = tree[ind];
+        Node& left = tree[ind * 2 + 1];
+        Node& right = tree[ind * 2 + 2];
 
-}
+        curr.val = max(left.val, right.val);
+        curr.l = left.l;
+        curr.r = right.r;
 
-int main(){
-    fastio;
-    int t = 1;
-    if (HAS_CASE) cin>>t;
-    while (t--){
-        solve();
+        if (s[mid] == s[mid + 1]) {
+            curr.val = max(curr.val, left.r + right.l);
+
+            if (left.l == mid - tl + 1) {
+                curr.l = left.l + right.l;
+            }
+            if (right.r == tr - mid) {
+                curr.r = left.r + right.r;
+            }
+        }
     }
+
+    void build(int ind, int tl, int tr) {
+        if (tl == tr) {
+            tree[ind] = Node();
+            return;
+        }
+
+        int mid = tl + (tr - tl) / 2;
+        build(2 * ind + 1, tl, mid);
+        build(2 * ind + 2, mid + 1, tr);
+        calculate(ind, tl, tr, mid);
+    }
+
+    void update(int i, char ch, int tl, int tr, int ind) {
+        if (tl == tr) {
+            s[i] = ch;
+            tree[ind] = Node();
+            return;
+        }
+
+        int mid = tl + (tr - tl) / 2;
+        if (i <= mid)
+            update(i, ch, tl, mid, 2 * ind + 1);
+        else
+            update(i, ch, mid + 1, tr, 2 * ind + 2);
+
+        calculate(ind, tl, tr, mid);
+    }
+
+    vector<int> longestRepeating(string s, string queryCharacters, vector<int>& queryIndices) {
+        int n = s.size();
+        this->s = s;
+        tree.resize(4 * n);
+
+        build(0, 0, n - 1);
+        vector<int> ans;
+
+        for (int i = 0; i < queryIndices.size(); ++i) {
+            update(queryIndices[i], queryCharacters[i], 0, n - 1, 0);
+            ans.push_back(tree[0].val);
+        }
+
+        return ans;
+    }
+};
+
+int main() {
+
+    string s;
+    if (!(cin >> s)) return 0;
+
+    string queryCharacters;
+    cin >> queryCharacters;
+
+    int q = queryCharacters.size();
+    vector<int> queryIndices(q);
+    for (int i = 0; i < q; ++i) {
+        cin >> queryIndices[i];
+    }
+
+    Solution solver;
+    vector<int> resultado = solver.longestRepeating(s, queryCharacters, queryIndices);
+
+    cout << "[";
+    for (size_t i = 0; i < resultado.size(); ++i) {
+        cout << resultado[i] << (i == resultado.size() - 1 ? "" : ", ");
+    }
+    cout << "]\n";
+
+    return 0;
 }
