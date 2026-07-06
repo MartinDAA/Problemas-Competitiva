@@ -31,8 +31,13 @@ Cada carpeta, que está separada por algoritmo, debe incluir tu(s) solución(es)
 
 [Codeforces - 356A. Knight Tournament](https://codeforces.com/problemset/problem/356/A) : **Rai Manrique**
 
+[LeetCode - 2213. Longest Substring of One Repeating Character](https://leetcode.com/problems/longest-substring-of-one-repeating-character/description/) : **Jose Diaz**
+
 ### Árbol Fenwick
+
 [LeetCode - 315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/) : **Jose Diaz**
+
+[LeetCode - 307. Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) : **Jose Diaz**
 
 ### Árboles Ternarios
 
